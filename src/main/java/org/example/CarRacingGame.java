@@ -28,41 +28,41 @@ public class CarRacingGame extends JPanel {
 
     private final int OBSTACLE_WIDTH = 40;
     private final int OBSTACLE_HEIGHT = 40;
-//
-//    public CarRacingGame() {
-//        setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
-//        obstaclesX = new int[3]; // 3 ta to'siq
-//        obstaclesY = new int[3]; // 3 ta to'siq
-//
-//
-//        addKeyListener(new KeyAdapter() {
-//            @Override
-//            public void keyPressed(KeyEvent e) {
-//                if (gameOver) return;
-//
-//                int keyCode = e.getKeyCode();
-//                if (keyCode == KeyEvent.VK_LEFT && carX > roadX) {
-//                    carX -= 10;
-//                } else if (keyCode == KeyEvent.VK_RIGHT && carX < roadX + roadWidth - CAR_WIDTH) {
-//                    carX += 10;
-//                }
-//                repaint();
-//            }
-//        });
-//
-//        setFocusable(true);
-//
-//        generateObstacles();
-//    }
-//
-//
-//    public void generateObstacles() {
-//        Random rand = new Random();
-//        for (int i = 0; i < obstaclesX.length; i++) {
-//            obstaclesX[i] = rand.nextInt(roadWidth - OBSTACLE_WIDTH) + roadX;
-//            obstaclesY[i] = rand.nextInt(BOARD_HEIGHT / 2);
-//        }
-//    }
+
+    public CarRacingGame() {
+        setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
+        obstaclesX = new int[3]; // 3 ta to'siq
+        obstaclesY = new int[3]; // 3 ta to'siq
+
+
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (gameOver) return;
+
+                int keyCode = e.getKeyCode();
+                if (keyCode == KeyEvent.VK_LEFT && carX > roadX) {
+                    carX -= 10;
+                } else if (keyCode == KeyEvent.VK_RIGHT && carX < roadX + roadWidth - CAR_WIDTH) {
+                    carX += 10;
+                }
+                repaint();
+            }
+        });
+
+        setFocusable(true);
+
+        generateObstacles();
+    }
+
+
+    public void generateObstacles() {
+        Random rand = new Random();
+        for (int i = 0; i < obstaclesX.length; i++) {
+            obstaclesX[i] = rand.nextInt(roadWidth - OBSTACLE_WIDTH) + roadX;
+            obstaclesY[i] = rand.nextInt(BOARD_HEIGHT / 2);
+        }
+    }
 //
 //
 //    public void moveObstacles() {
