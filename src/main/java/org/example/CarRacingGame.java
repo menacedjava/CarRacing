@@ -10,24 +10,24 @@ import java.util.Random;
 
 public class CarRacingGame extends JPanel {
 
-//
-//    private static final int BOARD_WIDTH = 400;
-//    private static final int BOARD_HEIGHT = 600;
-//    private static final int CAR_WIDTH = 30;
-//    private static final int CAR_HEIGHT = 50;
-//    private int carX = BOARD_WIDTH / 2 - CAR_WIDTH / 2;
-//    private int carY = BOARD_HEIGHT - CAR_HEIGHT - 10;
-//    private int roadX = BOARD_WIDTH / 2 - 60;
-//    private int roadWidth = 120;
-//    private int speed = 2;
-//
-//    private int[] obstaclesX;
-//    private int[] obstaclesY;
-//    private boolean gameOver = false;
-//
-//
-//    private final int OBSTACLE_WIDTH = 40;
-//    private final int OBSTACLE_HEIGHT = 40;
+
+    private static final int BOARD_WIDTH = 400;
+    private static final int BOARD_HEIGHT = 600;
+    private static final int CAR_WIDTH = 30;
+    private static final int CAR_HEIGHT = 50;
+    private int carX = BOARD_WIDTH / 2 - CAR_WIDTH / 2;
+    private int carY = BOARD_HEIGHT - CAR_HEIGHT - 10;
+    private int roadX = BOARD_WIDTH / 2 - 60;
+    private int roadWidth = 120;
+    private int speed = 2;
+
+    private int[] obstaclesX;
+    private int[] obstaclesY;
+    private boolean gameOver = false;
+
+
+    private final int OBSTACLE_WIDTH = 40;
+    private final int OBSTACLE_HEIGHT = 40;
 //
 //    public CarRacingGame() {
 //        setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
